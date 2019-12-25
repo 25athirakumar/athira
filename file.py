@@ -1,0 +1,11 @@
+fo=open("newfile.txt","w+")
+a=int(input("enter a: "))
+b=int(input("enter b: "))
+c=a+b
+print(c)
+fo.write("%d/n" %(c))
+print ("Name of the file: ", fo.name)
+print ("Closed or not : ", fo.closed)
+print ("Opening mode : ", fo.mode)
+print ("Softspace flag : ", fo.softspace)
+fo.close()
